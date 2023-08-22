@@ -1,6 +1,7 @@
 const inquirer = require("inquirer");
 const db = require("../dbConnection");
 const { loadManagers } = require("../data/employeeData");
+const a = require("../../promptUser");
 //gather info on which managers employees you wish to view
 async function viewByManager() {
   //retrieves existing managers
@@ -34,6 +35,7 @@ function viewEmployees(info) {
       //logs table of employees
       console.clear();
       console.table(formattedResult);
+      a.onStart();
     }
   );
 }

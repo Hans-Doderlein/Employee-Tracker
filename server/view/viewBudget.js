@@ -1,6 +1,7 @@
 const inquirer = require("inquirer");
 const { loadDepNames } = require("../data/departmentData");
 const db = require("../dbConnection");
+const a = require("../../promptUser");
 //gathers info on which department you want to view the budget for
 async function viewBudget() {
   //retrieves department names
@@ -36,6 +37,7 @@ function getBudget(info) {
       //displays table with formatted budget
       console.clear();
       console.table(formattedResult);
+      a.onStart();
     }
   );
 }

@@ -1,6 +1,7 @@
 const inquirer = require("inquirer");
 const { loadDepNames } = require("../data/departmentData");
 const db = require("../dbConnection");
+const a = require("../../promptUser");
 
 //gather info on department you wish to view
 async function viewByDepartment() {
@@ -33,6 +34,7 @@ function showByDepartment(info) {
       //logs table of employees in department
       console.clear();
       console.table(formattedResult);
+      a.onStart();
     }
   );
 }

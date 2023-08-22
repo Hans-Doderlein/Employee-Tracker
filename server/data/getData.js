@@ -1,3 +1,4 @@
+const a = require("../../promptUser");
 const db = require("../dbConnection");
 const cTable = require("console.table");
 
@@ -11,6 +12,7 @@ function getAllData(tableName) {
 
     console.clear();
     console.table(formattedResult);
+    a.onStart();
   });
 }
 module.exports = { getAllData };

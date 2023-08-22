@@ -11,25 +11,26 @@ const { viewBudget } = require("./view/viewBudget.js");
 const { getAllData } = require("./data/getData.js");
 const { roleInfo } = require("./add/addRole.js");
 
-const options = {
-  department: "View all departments",
-  role: "View all roles",
-  employee: "View all employees",
-  addDepartment: "Add a department",
-  addRole: "Add a role",
-  addEmployee: "Add an Employee",
-  updateEmployee: "Update and employee role",
-  updateManager: "Update an employees manager",
-  viewByManager: "View all employees by manager",
-  viewByDepartment: "View employees by department",
-  deleteRole: "Delete a role",
-  deleteEmployee: "Delete an employee",
-  deleteDepartment: "Delete a department",
-  viewBudget: "View total annual budget in a department",
-};
-
 //routes to appropriate function depending on chosen mode
 function manageOptions(chosen) {
+  const options = {
+    department: "View all departments",
+    role: "View all roles",
+    employee: "View all employees",
+    addDepartment: "Add a department",
+    addRole: "Add a role",
+    addEmployee: "Add an Employee",
+    updateEmployee: "Update and employee role",
+    updateManager: "Update an employees manager",
+    viewByManager: "View all employees by manager",
+    viewByDepartment: "View employees by department",
+    deleteRole: "Delete a role",
+    deleteEmployee: "Delete an employee",
+    deleteDepartment: "Delete a department",
+    viewBudget: "View total annual budget in a department",
+    quit: "quit",
+  };
+
   let { option } = chosen;
 
   switch (option) {
@@ -76,7 +77,7 @@ function manageOptions(chosen) {
       viewBudget();
       break;
     default:
-      console.log("Not matching");
+      console.log("Have a Nice Day!");
   }
 }
 
