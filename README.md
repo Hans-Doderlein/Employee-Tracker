@@ -1,8 +1,9 @@
 # Employee-Tracker
 
-## Link ->
+## Link -> https://watch.screencastify.com/v/dTA60TA0snJTkfALyKY4
 
-## Screenshot ->
+## Screenshot -> ![image](https://github.com/Hans-Doderlein/Employee-Tracker/assets/132940852/eacbe382-4c4a-4bc0-b970-68ccccbbadfa)
+
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
