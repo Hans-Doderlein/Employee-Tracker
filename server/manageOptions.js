@@ -78,6 +78,7 @@ function manageOptions(chosen) {
       break;
     default:
       console.log("Have a Nice Day!");
+      process.exit(0);
   }
 }
 
