@@ -1,17 +1,15 @@
---deletes old database and creates fresh one
+
 DROP DATABASE IF EXISTS restaurant_db;
 CREATE DATABASE restaurant_db;
 
---selects database for use
+
 USE restaurant_db;
 
---creates department table
 CREATE TABLE department (
     department_id INT NOT NULL UNIQUE,
     department_name VARCHAR(30) not null PRIMARY KEY UNIQUE
 );
 
---creates role table
 CREATE TABLE role (
     role_name VARCHAR(30) not null PRIMARY KEY,
     role_id INT ,
@@ -25,8 +23,6 @@ CREATE TABLE role (
     on delete set null
 
 );
-
---creates employee table
 CREATE TABLE employee (
     employee_id int ,
     first_name VARCHAR(30) not null PRIMARY KEY,
